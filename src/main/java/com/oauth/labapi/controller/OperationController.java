@@ -127,12 +127,14 @@ public class OperationController {
         poModel.setNumero(factureList.get(0).getNumero());
         poModel.setPrestataire(factureList.get(0).getPrestataire());
         poModel.setReference(factureList.get(0).getContrat());
-        models.add(poModel);
+        models.add(poModel);models.add(poModel);models.add(poModel);
 
         pModel.setModels(models);
         pModel.setPrestataire(factureList.get(0).getPrestataire());
         pModel.setPrestataireId(55);
         File f = JasperCompilerManager.generateregulationSlaireMAD(pModel);
-        SendMail.sendemail("mohamed.ellaouzi@gmail.com", "hello world", f);
+        SendMail.sendemail("c.hamdaoui98@gmail.com", "hello world", f);
+
+
     }
 }

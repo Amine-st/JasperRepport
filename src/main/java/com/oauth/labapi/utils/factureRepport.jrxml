@@ -81,7 +81,7 @@
 		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="124" splitType="Stretch">
+		<band height="114" splitType="Stretch">
 			<staticText>
 				<reportElement x="30" y="10" width="502" height="20" uuid="ebe4436e-9467-4621-be30-1f931f879661"/>
 				<textElement>
@@ -92,13 +92,16 @@
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="130" splitType="Stretch">
+		<band height="145" splitType="Stretch">
 			<componentElement>
-				<reportElement x="22" y="0" width="510" height="130" uuid="b7fdcba3-098d-47ee-adfc-5dbe50de1713">
+				<reportElement mode="Transparent" x="22" y="0" width="510" height="140" forecolor="#000000" backcolor="#FFFFFF" uuid="b7fdcba3-098d-47ee-adfc-5dbe50de1713">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
 					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+					<property name="net.sf.jasperreports.style.isBold" value="true"/>
+					<property name="net.sf.jasperreports.style.radius" value="5"/>
+					<property name="net.sf.jasperreports.style.rotation" value="None"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
 					<datasetRun subDataset="poModel" uuid="c4de769a-e537-4d9c-b1b5-3b0f39dd0670">
@@ -106,12 +109,37 @@
 					</datasetRun>
 					<jr:column width="220" uuid="835def26-41ec-4a92-8941-d6523fcf655f">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
-						<jr:tableHeader style="Table 1_TH" height="50" rowSpan="1"/>
-						<jr:detailCell style="Table 1_TD" height="80">
+						<jr:tableHeader style="Table 1_TH" height="50" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="220" height="50" uuid="07837c23-29c3-4672-bf46-79faa77d4cbd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Facture Info]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="Table 1_TD" height="90">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<box>
+								<pen lineStyle="Solid" lineColor="#000000"/>
+							</box>
 							<textField>
-								<reportElement x="0" y="0" width="220" height="80" uuid="e1a33ed8-2238-4a6a-9fe3-1fb2e847171f"/>
-								<textElement textAlignment="Left"/>
-								<textFieldExpression><![CDATA["Numero : "+$F{numero}+"\n"+"Reference : "+$F{reference}+"\n"+"Prestataire : "+$F{prestataire}+"\n"+"Date PV : "+$F{datePvRecep}+"\n"+"Depot de la facture   : "+$F{dateDepot}+"\n"+"Montant : "+$F{montant}]]></textFieldExpression>
+								<reportElement x="0" y="0" width="110" height="90" uuid="7e9a72ae-3fcc-4309-9d28-a437b879a3c4">
+									<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+									<property name="com.jaspersoft.studio.unit.spacingAfter" value="px"/>
+								</reportElement>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<paragraph spacingBefore="2" spacingAfter="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[" Numero  "+"\n"+" Reference  "+"\n"+" Prestataire  "+"\n"+" Date PV  "+"\n"+" Depot de la facture    "+"\n"+" Montant  "]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="110" y="0" width="110" height="90" uuid="62b9ff60-b446-41c9-af12-13b22832abcf">
+									<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+									<property name="com.jaspersoft.studio.unit.spacingAfter" value="px"/>
+								</reportElement>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<paragraph spacingBefore="2" spacingAfter="2"/>
+								</textElement>
+								<textFieldExpression><![CDATA[":  "+$F{numero}+"\n"+":  "+$F{reference}+"\n"+":  "+$F{prestataire}+"\n"+":  "+new java.text.SimpleDateFormat("dd/MM/yyyy").format($F{datePvRecep})+"\n"+":  "+new java.text.SimpleDateFormat("dd/MM/yyyy").format($F{dateDepot})+"\n" +":  "+$F{montant}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -124,9 +152,9 @@
 								<text><![CDATA[Delai de Paiement]]></text>
 							</staticText>
 						</jr:tableHeader>
-						<jr:detailCell style="Table 1_TD" height="80">
+						<jr:detailCell style="Table 1_TD" height="90">
 							<textField>
-								<reportElement x="0" y="0" width="60" height="80" uuid="af1958f6-70a8-4c5d-b043-01ce928717c4"/>
+								<reportElement x="0" y="0" width="60" height="90" uuid="af1958f6-70a8-4c5d-b043-01ce928717c4"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{nbrTotalDeJours}]]></textFieldExpression>
 							</textField>
@@ -141,9 +169,9 @@
 								<text><![CDATA[Jours de Retard]]></text>
 							</staticText>
 						</jr:tableHeader>
-						<jr:detailCell style="Table 1_TD" height="80">
+						<jr:detailCell style="Table 1_TD" height="90">
 							<textField>
-								<reportElement x="0" y="0" width="60" height="80" uuid="474391f9-62eb-42f0-9d3f-5b0ebcc2c7db"/>
+								<reportElement x="0" y="0" width="60" height="90" uuid="474391f9-62eb-42f0-9d3f-5b0ebcc2c7db"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{nbrDeJoursRetard}]]></textFieldExpression>
 							</textField>
@@ -158,9 +186,9 @@
 								<text><![CDATA[Indicateur Service fait]]></text>
 							</staticText>
 						</jr:tableHeader>
-						<jr:detailCell style="Table 1_TD" height="80">
+						<jr:detailCell style="Table 1_TD" height="90">
 							<textField>
-								<reportElement x="0" y="0" width="60" height="80" uuid="92684bb9-477f-4c91-82ed-6b06f3225861"/>
+								<reportElement x="0" y="0" width="60" height="90" uuid="92684bb9-477f-4c91-82ed-6b06f3225861"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{indicateurSf}]]></textFieldExpression>
 							</textField>
@@ -175,9 +203,9 @@
 								<text><![CDATA[Indicateur Emession]]></text>
 							</staticText>
 						</jr:tableHeader>
-						<jr:detailCell style="Table 1_TD" height="80">
+						<jr:detailCell style="Table 1_TD" height="90">
 							<textField>
-								<reportElement x="0" y="0" width="60" height="80" uuid="87e3910d-9ad6-408f-8057-c7374c9510ba"/>
+								<reportElement x="0" y="0" width="60" height="90" uuid="87e3910d-9ad6-408f-8057-c7374c9510ba"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{indicateurEm}]]></textFieldExpression>
 							</textField>
@@ -192,9 +220,9 @@
 								<text><![CDATA[Indicateur Paiement]]></text>
 							</staticText>
 						</jr:tableHeader>
-						<jr:detailCell style="Table 1_TD" height="80">
+						<jr:detailCell style="Table 1_TD" height="90">
 							<textField>
-								<reportElement x="0" y="0" width="50" height="80" uuid="5da93408-a33f-47c9-b0e6-894ce76f967b"/>
+								<reportElement x="0" y="0" width="50" height="90" uuid="5da93408-a33f-47c9-b0e6-894ce76f967b"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{indicateurTp}]]></textFieldExpression>
 							</textField>
