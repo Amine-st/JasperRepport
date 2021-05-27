@@ -86,7 +86,7 @@ public class LoadFromXls {
 
     public static void main(String[] args) throws ParseException, IOException {
 
-        String CTP_USERS_FILE = "C:\\Users\\chamd\\IdeaProjects\\state machine\\lab-api\\src\\main\\resources\\static\\Cas_Nominal.xlsx";
+        String CTP_USERS_FILE = "C:\\Users\\AMINE-ALAOUI\\Desktop\\api_lab\\JasperRepport\\src\\main\\resources\\static\\regions.csv";
         OperationTest o = new OperationTest();
         Facture facture = new Facture();
         List<OperationFacture> oprs =  LoadFromXls.getLines(CTP_USERS_FILE,0 ).stream().collect(Collectors.toList());

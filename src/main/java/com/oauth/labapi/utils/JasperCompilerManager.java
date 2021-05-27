@@ -24,8 +24,8 @@ import java.util.*;
 public  class JasperCompilerManager implements CommandLineRunner {
 
 
-    private static String logo_path = "C:\\Users\\chamd\\Downloads\\lab-ouath-main\\src\\main\\resources\\static\\logo_path.PNG";
-    private static String footer_path = "C:\\Users\\chamd\\Downloads\\lab-ouath-main\\src\\main\\resources\\static\\footer.png";
+    private static String logo_path = "C:\\Users\\AMINE-ALAOUI\\Desktop\\api_lab\\JasperRepport\\src\\main\\resources\\static\\logo_path.PNG";
+    private static String footer_path = "C:\\Users\\AMINE-ALAOUI\\Desktop\\api_lab\\JasperRepport\\src\\main\\resources\\static\\footer.png";
     private ErrorManager log;
     public static String logos = "hello world";
 
@@ -46,7 +46,7 @@ public  class JasperCompilerManager implements CommandLineRunner {
         //URL reportPath  = getClass().getResource("/jasper/" + jrxml + ".jrxml");
         try
         {
-            final JasperReport report = JasperCompileManager.compileReport("C:\\Users\\chamd\\Downloads\\lab-ouath-main\\src\\main\\java\\com\\oauth\\labapi\\utils\\factureRepport.jrxml");
+            final JasperReport report = JasperCompileManager.compileReport("C:\\Users\\AMINE-ALAOUI\\Desktop\\api_lab\\JasperRepport\\src\\main\\java\\com\\oauth\\labapi\\utils\\factureRepport.jrxml");
             final Map<String, Object> parameters = parameters(poModel);
             final JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(Collections.singletonList("cotisations"));
             JasperPrint jprint = JasperFillManager.fillReport(report, parameters, dataSource);
@@ -56,7 +56,7 @@ public  class JasperCompilerManager implements CommandLineRunner {
             //SimpleOutputStreamExporterOutput exporterOutput = new SimpleOutputStreamExporterOutput(
                  //   response.getOutputStream());
             exporter.setExporterOutput(
-                    new SimpleOutputStreamExporterOutput("test14.pdf"));
+                    new SimpleOutputStreamExporterOutput("test16.pdf"));
             exporter.setExporterInput(new SimpleExporterInput(jprint));
            // exporter.setExporterOutput(exporterOutput);
             exporter.exportReport();
@@ -74,7 +74,7 @@ public  class JasperCompilerManager implements CommandLineRunner {
         {
             System.out.println(e);
         }
-        return new File("test14.pdf");
+        return new File("test16.pdf");
     }
     @Override
     public void run(String... args) throws Exception {

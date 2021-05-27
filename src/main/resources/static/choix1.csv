@@ -1,0 +1,120 @@
+﻿1,Male,Region1,Chef de division,CHOIX11,CHOIX2,CHOIX7
+2,Female,Region2,Chef de division,CHOIX13,CHOIX8,CHOIX11
+3,Male,Region3,Chef de division,CHOIX2,CHOIX13,CHOIX9
+4,Female,Region4,Chef de division,CHOIX14,CHOIX4,CHOIX9
+5,Female,Region5,Chef de division,CHOIX7,CHOIX4,CHOIX14
+6,Male,Region6,Chef de division,CHOIX6,CHOIX9,CHOIX5
+7,Female,Region3,Chef de division,CHOIX9,CHOIX8,CHOIX4
+8,Male,Region4,Chef de division,CHOIX6,CHOIX8,CHOIX12
+9,Male,Region5,Directeur,CHOIX2,CHOIX6,CHOIX1
+10,Male,Region1,Directeur,CHOIX10,CHOIX6,CHOIX4
+11,Female,Region2,Directeur,CHOIX13,CHOIX3,CHOIX12
+12,Male,Region3,Directeur,CHOIX5,CHOIX13,CHOIX11
+13,Male,Region4,Directeur,CHOIX12,CHOIX2,CHOIX8
+14,Female,Region5,Directeur,CHOIX1,CHOIX2,CHOIX11
+15,Male,Region6,Directeur,CHOIX12,CHOIX13,CHOIX12
+16,Female,Region7,Directeur,CHOIX13,CHOIX13,CHOIX14
+17,Female,Region8,Directeur,CHOIX9,CHOIX9,CHOIX3
+18,Male,Region1,Directeur,CHOIX3,CHOIX7,CHOIX4
+19,Male,Region2,Chef de division,CHOIX14,CHOIX14,CHOIX4
+20,Male,Region3,Chef de division,CHOIX13,CHOIX14,CHOIX1
+21,Female,Region4,Chef de division,CHOIX3,CHOIX13,CHOIX8
+22,Male,Region5,Chef de division,CHOIX8,CHOIX3,CHOIX5
+23,Female,Region6,Chef de division,CHOIX9,CHOIX13,CHOIX10
+24,Male,Region3,Chef de division,CHOIX1,CHOIX12,CHOIX4
+25,Male,Region4,Chef de division,CHOIX13,CHOIX4,CHOIX1
+26,Male,Region5,Chef de division,CHOIX7,CHOIX4,CHOIX9
+27,Male,Region1,Chef de division,CHOIX11,CHOIX3,CHOIX10
+28,Male,Region2,Chef de division,CHOIX10,CHOIX10,CHOIX9
+29,Male,Region3,Chef de service,CHOIX6,CHOIX3,CHOIX7
+31,Female,Region4,Chef de service,CHOIX6,CHOIX6,CHOIX13
+32,Female,Region5,Chef de service,CHOIX2,CHOIX5,CHOIX6
+33,Female,Region6,Chef de service,CHOIX8,CHOIX8,CHOIX13
+34,Female,Region7,Chef de service,CHOIX6,CHOIX3,CHOIX1
+35,Male,Region2,Chef de service,CHOIX9,CHOIX1,CHOIX5
+36,Female,Region3,Chef de service,CHOIX3,CHOIX5,CHOIX9
+37,Male,Region4,Chef de service,CHOIX4,CHOIX12,CHOIX3
+38,Male,Region5,Chef de service,CHOIX10,CHOIX5,CHOIX3
+39,Male,Region6,Chef de service,CHOIX7,CHOIX8,CHOIX9
+40,Male,Region7,Chef de division,CHOIX11,CHOIX5,CHOIX4
+41,Female,Region8,Chef de division,CHOIX10,CHOIX8,CHOIX4
+42,Female,Region1,Chef de division,CHOIX12,CHOIX9,CHOIX6
+43,Female,Region2,Chef de division,CHOIX6,CHOIX9,CHOIX14
+44,Male,Region3,Chef de division,CHOIX6,CHOIX4,CHOIX1
+45,Male,Region4,Chef de division,CHOIX12,CHOIX3,CHOIX14
+46,Male,Region5,Chef de division,CHOIX8,CHOIX13,CHOIX5
+47,Male,Region6,Chef de division,CHOIX10,CHOIX14,CHOIX2
+48,Male,Region3,Chef de division,CHOIX2,CHOIX7,CHOIX1
+49,Female,Region4,Chef de division,CHOIX6,CHOIX14,CHOIX2
+50,Female,Region5,Chef de service,CHOIX5,CHOIX11,CHOIX1
+51,Female,Region3,Chef de service,CHOIX14,CHOIX6,CHOIX5
+52,Female,Region4,Chef de service,CHOIX3,CHOIX3,CHOIX8
+53,Female,Region5,Chef de service,CHOIX3,CHOIX5,CHOIX5
+54,Male,Region1,Chef de service,CHOIX6,CHOIX4,CHOIX10
+55,Male,Region2,Chef de division,CHOIX13,CHOIX4,CHOIX9
+56,Female,Region3,Chef de service,CHOIX4,CHOIX10,CHOIX13
+57,Male,Region4,Sans fonction,CHOIX6,CHOIX6,CHOIX9
+58,Male,Region5,Sans fonction,CHOIX13,CHOIX12,CHOIX8
+59,Male,Region6,Chef de division,CHOIX14,CHOIX10,CHOIX1
+60,Male,Region7,Chef de division,CHOIX6,CHOIX2,CHOIX7
+61,Male,Region2,Chef de division,CHOIX10,CHOIX3,CHOIX1
+62,Female,Region3,Chef de division,CHOIX11,CHOIX14,CHOIX6
+63,Female,Region4,Chef de division,CHOIX6,CHOIX1,CHOIX4
+64,Female,Region5,Chef de division,CHOIX7,CHOIX8,CHOIX12
+65,Female,Region6,Chef de division,CHOIX4,CHOIX2,CHOIX1
+66,Female,Region5,Chef de division,CHOIX12,CHOIX5,CHOIX5
+67,Male,Region6,Chef de division,CHOIX9,CHOIX14,CHOIX4
+68,Male,Region7,Chef de division,CHOIX13,CHOIX5,CHOIX4
+69,Male,Region8,Chef de division,CHOIX9,CHOIX2,CHOIX10
+70,Female,Region1,Chef de division,CHOIX10,CHOIX2,CHOIX5
+71,Female,Region2,Chef de division,CHOIX10,CHOIX1,CHOIX6
+72,Female,Region3,Chef de division,CHOIX6,CHOIX1,CHOIX3
+73,Male,Region4,Chef de division,CHOIX4,CHOIX10,CHOIX8
+74,Female,Region5,Chef de division,CHOIX5,CHOIX14,CHOIX6
+75,Female,Region6,Directeur,CHOIX4,CHOIX9,CHOIX11
+76,Female,Region3,Directeur,CHOIX8,CHOIX12,CHOIX6
+77,Female,Region4,Directeur,CHOIX9,CHOIX10,CHOIX3
+78,Male,Region5,Directeur,CHOIX10,CHOIX6,CHOIX10
+79,Female,Region3,Directeur,CHOIX13,CHOIX8,CHOIX3
+80,Female,Region4,Directeur,CHOIX13,CHOIX12,CHOIX3
+81,Male,Region5,Directeur,CHOIX4,CHOIX8,CHOIX5
+83,Female,Region1,Directeur,CHOIX4,CHOIX13,CHOIX8
+84,Female,Region2,Directeur,CHOIX11,CHOIX12,CHOIX1
+85,Male,Region3,Directeur,CHOIX11,CHOIX10,CHOIX8
+86,Female,Region4,Sans fonction,CHOIX12,CHOIX6,CHOIX8
+87,Female,Region5,Sans fonction,CHOIX4,CHOIX4,CHOIX13
+88,Male,Region3,Chef de service,CHOIX8,CHOIX1,CHOIX4
+89,Female,Region4,Sans fonction,CHOIX8,CHOIX1,CHOIX5
+91,Male,Region5,Sans fonction,CHOIX8,CHOIX9,CHOIX2
+92,Female,Region3,Chef de division,CHOIX4,CHOIX8,CHOIX9
+93,Female,Region4,Chef de division,CHOIX1,CHOIX12,CHOIX14
+95,Male,Region5,Chef de division,CHOIX1,CHOIX1,CHOIX12
+96,Female,Region1,Chef de division,CHOIX5,CHOIX12,CHOIX6
+97,Female,Region2,Chef de division,CHOIX10,CHOIX5,CHOIX1
+98,Male,Region3,Chef de division,CHOIX11,CHOIX5,CHOIX10
+99,Female,Region4,Chef de division,CHOIX4,CHOIX11,CHOIX2
+100,Female,Region5,Chef de division,CHOIX8,CHOIX5,CHOIX2
+101,Male,Region10,Chef de division,CHOIX3,CHOIX8,CHOIX1
+103,Female,Region12,Chef de division,CHOIX12,CHOIX9,CHOIX7
+104,Female,Region9,Sans fonction,CHOIX11,CHOIX8,CHOIX2
+105,Male,Region3,Sans fonction,CHOIX9,CHOIX2,CHOIX1
+106,Female,Region2,Sans fonction,CHOIX5,CHOIX7,CHOIX4
+107,Male,Region12,Sans fonction,CHOIX14,CHOIX4,CHOIX12
+108,Male,Region10,Chef de service,CHOIX9,CHOIX12,CHOIX3
+109,Male,Region9,Chef de service,CHOIX1,CHOIX2,CHOIX10
+110,Male,Region8,Chef de service,CHOIX2,CHOIX2,CHOIX9
+111,Male,Region7,Chef de service,CHOIX8,CHOIX3,CHOIX7
+112,Female,Region1,Chef de service,CHOIX10,CHOIX6,CHOIX3
+113,Female,Region2,Chef de service,CHOIX13,CHOIX8,CHOIX6
+114,Female,Region3,Chef de service,CHOIX6,CHOIX3,CHOIX3
+115,Female,Region4,Chef de service,CHOIX1,CHOIX11,CHOIX7
+116,Female,Region5,Chef de service,CHOIX9,CHOIX4,CHOIX9
+117,Female,Region7,Chef de service,CHOIX5,CHOIX10,CHOIX13
+118,Male,Region3,Chef de service,CHOIX13,CHOIX3,CHOIX11
+119,Female,Region4,Sans fonction,CHOIX8,CHOIX11,CHOIX2
+120,Female,Region5,Sans fonction,CHOIX13,CHOIX6,CHOIX8
+121,Female,Region2,Sans fonction,CHOIX8,CHOIX12,CHOIX13
+122,Female,Region2,Sans fonction,CHOIX6,CHOIX14,CHOIX7
+123,Female,Region3,Sans fonction,CHOIX1,CHOIX5,CHOIX7
+124,Female,Region4,Chef de division,CHOIX10,CHOIX14,CHOIX14
+125,Female,Region5,Chef de division,CHOIX6,CHOIX8,CHOIX7

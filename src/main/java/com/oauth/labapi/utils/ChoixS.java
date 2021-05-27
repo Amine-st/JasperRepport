@@ -1,0 +1,13 @@
+package com.oauth.labapi.utils;
+
+public enum ChoixS {
+
+   CHOIX1,CHOIX2,CHOIX3,CHOIX4,CHOIX5,CHOIX6,CHOIX7,CHOIX8,CHOIX9,CHOIX10,CHOIX11,CHOIX12,CHOIX13,CHOIX14,RIEN
+
+
+
+
+
+
+
+}

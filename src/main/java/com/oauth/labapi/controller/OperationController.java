@@ -7,13 +7,19 @@ import com.google.gson.JsonParser;
 import com.ibm.icu.impl.Assert;
 import com.oauth.labapi.model.*;
 import com.oauth.labapi.utils.*;
+import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.Response;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,6 +27,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
+import javax.ws.rs.*;
 
 @RestController
 @RequestMapping("api")
@@ -40,8 +47,8 @@ public class OperationController {
         operationFactureList2 = operationFactureList.stream().sorted(Comparator.comparingLong(OperationFacture::getParent_id)).collect(Collectors.toList());*/
 
 
-        final String uri = "http://192.168.100.21:8080/e-facture-api/api/operationByStatut";
-        final String uriFacture = "http://192.168.100.21:8080/e-facture-api/api/factures";
+        final String uri = "https://strange-cat-0.loca.lt/e-facture-api/api/operationByStatut";
+        final String uriFacture = "https://strange-cat-0.loca.lt/e-facture-api/api/factures";
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<OperationFacture[]> response =
                 restTemplate.getForEntity(
@@ -56,13 +63,13 @@ public class OperationController {
         Facture[] factures = responseF.getBody();
 
         for(Facture facture: factures){
-            if(facture.getId()==209)
+            if(facture.getId()==20)
                 factureList.add(facture);
 
         }
 
             for(OperationFacture operationFacture: operationFactures){
-                if(operationFacture.getFacture_id()==209)
+                if(operationFacture.getFacture_id()==20)
                     operationFactureList.add(operationFacture);
 
             }
@@ -81,7 +88,7 @@ public class OperationController {
         CheminParentFils cheminParentFils = new CheminParentFils();
 
         Map<Long, OperationFacture> operationLongMap = cheminParentFils.operationListToMap(operationFactureList);
-        operationFactureList2 = cheminParentFils.ParentToFils(operationLongMap, 230,operationFacture);
+        operationFactureList2 = cheminParentFils.ParentToFils(operationLongMap, 76,operationFacture);
 
 
         String source = "FACTURE_DEPOSEE";
@@ -133,8 +140,27 @@ public class OperationController {
         pModel.setPrestataire(factureList.get(0).getPrestataire());
         pModel.setPrestataireId(55);
         File f = JasperCompilerManager.generateregulationSlaireMAD(pModel);
-        SendMail.sendemail("c.hamdaoui98@gmail.com", "hello world", f);
+       // SendMail.sendemail("c.hamdaoui98@gmail.com", "hello world", f);
 
 
+    }
+    @GetMapping("getpdf")
+    public ResponseEntity<InputStreamResource> downloadFile(@RequestBody String pathFile) throws IOException {
+        pathFile = "C:\\Users\\AMINE-ALAOUI\\Desktop\\api_lab\\JasperRepport\\test10.pdf";
+        System.out.println(pathFile);
+        InputStreamResource resource = new InputStreamResource(new FileInputStream( pathFile));
+        File fileToDownload = resource.getFile();
+
+
+        return ResponseEntity.ok()
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileToDownload.getName())
+                .contentLength(fileToDownload.length())
+                .contentType(MediaType.parseMediaType(MediaType.APPLICATION_OCTET_STREAM_VALUE))
+                .body(resource);
+    }
+
+    public static void main(String[] args) throws IOException, ParseException {
+        OperationController o = new OperationController();
+        o.getDayPassed();
     }
 }
