@@ -17,7 +17,7 @@ public class ChoixFromCsv {
 
     public static List<List<String>> read() throws IOException {
         List<List<String>> records = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\AMINE-ALAOUI\\Desktop\\api_lab\\JasperRepport\\src\\main\\resources\\static\\choix1.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/main/resources/static/choix1.csv"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
@@ -172,7 +172,7 @@ public class ChoixFromCsv {
     public static List<Choix>  implimentation(List<Choix> choixes){
         List<Choix> choixListR1 = getListOneRegion(choixes,"Region1",ChoixS.CHOIX1);
         List<Choix> choixListR2 = getListOneRegion(choixes,"Region2",ChoixS.CHOIX1);
-        List<Choix> choixListR3 = getListOneRegion(choixes,"Region2",ChoixS.CHOIX1);
+        List<Choix> choixListR3 = getListOneRegion(choixes,"Region3",ChoixS.CHOIX1);
         List<Choix> affectationList = affectation(choixListR1,choixListR2,choixListR3,ChoixS.CHOIX1);
 
         return affectationList;

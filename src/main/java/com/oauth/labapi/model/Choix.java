@@ -7,7 +7,7 @@ import lombok.Data;
 
 import java.util.Date;
 
-@Data
+
 public class Choix {
     private String id;
     private String region;
@@ -22,5 +22,53 @@ public class Choix {
         this.choix1 = choix1;
         this.choix2 = choix2;
         this.choix3 = choix3;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    public ChoixS getChoix1() {
+        return choix1;
+    }
+
+    public void setChoix1(ChoixS choix1) {
+        this.choix1 = choix1;
+    }
+
+    public ChoixS getChoix2() {
+        return choix2;
+    }
+
+    public void setChoix2(ChoixS choix2) {
+        this.choix2 = choix2;
+    }
+
+    public ChoixS getChoix3() {
+        return choix3;
+    }
+
+    public void setChoix3(ChoixS choix3) {
+        this.choix3 = choix3;
+    }
+
+    public ChoixS getIsSelected() {
+        return isSelected;
+    }
+
+    public void setIsSelected(ChoixS isSelected) {
+        this.isSelected = isSelected;
     }
 }

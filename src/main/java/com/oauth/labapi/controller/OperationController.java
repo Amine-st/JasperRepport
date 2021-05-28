@@ -1,3 +1,4 @@
+/*
 package com.oauth.labapi.controller;
 
 
@@ -41,10 +42,12 @@ public class OperationController {
         List<OperationFacture> operationFactureList2 = new ArrayList<>();
         List<Facture> factureList = new ArrayList<>();
         DayPassedEtat dayPassedEtat = new DayPassedEtat();
-       /* String CTP_USERS_FILE = "C:\\Users\\chamd\\IdeaProjects\\state machine\\lab-api\\src\\main\\resources\\static\\Cas_Nominal.xlsx";
+       */
+/* String CTP_USERS_FILE = "C:\\Users\\chamd\\IdeaProjects\\state machine\\lab-api\\src\\main\\resources\\static\\Cas_Nominal.xlsx";
         operationFactureList = LoadFromXls.getLines(CTP_USERS_FILE, 0).stream().collect(Collectors.toList());
 
-        operationFactureList2 = operationFactureList.stream().sorted(Comparator.comparingLong(OperationFacture::getParent_id)).collect(Collectors.toList());*/
+        operationFactureList2 = operationFactureList.stream().sorted(Comparator.comparingLong(OperationFacture::getParent_id)).collect(Collectors.toList());*//*
+
 
 
         final String uri = "https://strange-cat-0.loca.lt/e-facture-api/api/operationByStatut";
@@ -164,3 +167,4 @@ public class OperationController {
         o.getDayPassed();
     }
 }
+*/

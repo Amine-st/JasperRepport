@@ -1,3 +1,4 @@
+/*
 package com.oauth.labapi.utils;
 
 
@@ -48,7 +49,8 @@ public class DayPassedEtat {
             return true;
         return false;
     }
-   /* public Long facturesDayPassed(Facture facture, String source, String target){
+   */
+/* public Long facturesDayPassed(Facture facture, String source, String target){
         List<OperationFacture> operations = facture.getOperations().stream().collect(Collectors.toList());
         Long dayPassedFcture = 0L;
                     if(!trouve(operations,source,target))
@@ -58,7 +60,8 @@ public class DayPassedEtat {
 
 
         return dayPassedFcture;
-    }*/
+    }*//*
+
 
     public Long operationsDayPassed(List<OperationFacture> operations, String source, String target) {
         OperationTest o = new OperationTest();
@@ -122,9 +125,11 @@ public class DayPassedEtat {
         return dayPassed - d;
     }
 
-    /*===============================================================================================================
+    */
+/*===============================================================================================================
         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>using the parent id<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-    ===============================================================================================================*/
+    ===============================================================================================================*//*
+
     public Long operationsDayPassedNew(List<OperationFacture> operations, String source, String target) {
         OperationTest o = new OperationTest();
         long dayPassed = 0;
@@ -234,3 +239,4 @@ public class DayPassedEtat {
 
     }
 }
+*/
